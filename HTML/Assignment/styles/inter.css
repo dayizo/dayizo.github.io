@@ -1,0 +1,83 @@
+p.ex1 {
+  box-sizing: content-box;
+  display: inline-block;
+  border: black;
+  background-color: rgb(87, 131, 90);
+  display: block;
+  text-align: center;
+  border: double;
+  border-style: groove;
+  width: 30%;
+  border-width: thick;
+}
+
+#stuff {
+  color: ivory;
+  background-color: rgb(82, 70, 90);
+  box-sizing: content-box;
+  display: inline-block;
+  border: black;
+  border-style: dotted;
+  border-width: thick;
+}
+
+button {
+  background-color: hotpink;
+}
+
+.closed {
+  display: none;
+}
+
+.opened {
+  display: block;
+}
+
+#displayinfo {
+  height: 150px;
+  width: 150px;
+  border: 10px solid rgb(255, 217, 1);
+  text-align: center;
+  color: rgb(204, 204, 204);
+  background-image: url("");
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-color: aqua;
+  box-sizing: content-box;
+  display: block;
+  border-radius: 25%;
+  padding: 10%;
+  margin-left: 30%;
+}
+
+.displayinfo2 {
+  width: 35%;
+  max-height: 20%;
+  text-align: center;
+  color: brown;
+  background-image: url("");
+  background-size: contain;
+  background-color: aqua;
+  box-sizing: content-box;
+  display: block;
+  border: brown;
+  border-style: outset;
+  border-width: thick;
+  border-radius: 15px;
+  padding: 15%;
+  margin-left: 20%;
+}
+
+.show {
+  display: inline-block;
+  width: 10%;
+  border-style: outset;
+  border-color: chartreuse;
+  border-width: thick;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+#count {
+  background-color: blue;
+}
