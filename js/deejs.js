@@ -1,3 +1,20 @@
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if (bar) {
+    bar.addEventListener('click', () => {
+      nav.classList.add('active')
+    })
+}
+
+if (close) {
+  close.addEventListener('click', () => {
+    nav.classList.remove('active')
+  })
+}
+
+
 
 var ImageIndex = 0;
 function swipe(event, direction){
@@ -15,3 +32,12 @@ function swipe(event, direction){
         ImageIndex = ImageIndex >= 1 ? ImageIndex - 1 : 0;
     }
 }
+
+function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+

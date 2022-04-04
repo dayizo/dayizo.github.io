@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="PORTFOLIO, CV, RESUME, PROFILE" />
+    <meta name="description" content="..." />
+    <title>Art Gallery | OTITOJU ADEDAYO J</title>
+    <link rel="icon" type="image/png" href="/images/head-logo.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/mystyles.css"
+      media="screen"
+    />
+    <script src="/js/deejs.js"></script>
+    <script
+    src="https://kit.fontawesome.com/6bdadb5a41.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:wght@100;200;300;400;500;600");
+    #back{
+      font-family: Montserrat, sans-serif;
+      background: bottom;
+    }
+  </style>
+  </head>
+  <body>
+
+    <div id="back"
+    style="
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: right;
+    "
+  >
+    <a
+      style="margin-right: 85px; color: #666; text-decoration: none"
+      href="/index.html"
+      >Back to HomePage</a
+    >
+  </div>
+
+    <section id="gallery" class="section-p1">
+     <h2>Click to display an image</h2>
+      <div class="single-image">
+        <img src="/images/default_display.png" id="MainImg" alt="" />
+      </div>       
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <div class="col-img">
+            <img
+              src="/images/bridge.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>The Bridge</h3>
+            <p>Oct 2019</p>
+          </div>
+          <div class="button">
+            <li><a class="b1">Display</a></li>
+            <li><a class="b2" href="/images/bridge.jpg" download>Download</a></li>
+          </div>
+
+          </div>
+          <div class="small-img-col">
+            <div class="col-img">
+            <img
+              src="/images/Cristiano.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Cristiano</h3>
+            <p>700 Goals</p>
+          </div>
+          <div class="button">
+            <li><a class="b1">Display</a></li>
+            <li><a class="b2" href="/images/Cristiano.jpg"download>Download</a></li>
+          </div>
+
+          </div>         
+          <div class="small-img-col">
+            <div class="col-img">
+            <img
+              src="/images/i_wonder_1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>I wonder (Pt1)</h3>
+            <p>Tribute</p>
+          </div>
+          <div class="button">
+            <li><a class="b1">Display</a></li>
+            <li><a class="b2" href="/images/i_wonder_1.jpg"download>Download</a></li>
+          </div>
+
+          </div>
+          <div class="small-img-col">
+            <div class="col-img">
+            <img
+              src="/images/i_wonder_2.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>I wonder (Pt2)</h3>
+            <p>Tribute</p>
+          </div>
+          <div class="button">
+            <li><a class="b1">Display</a></li>
+            <li><a class="b2" href="/images/i_wonder_2.jpg"download>Download</a></li>
+          </div>
+
+          </div>      
+          <div class="small-img-col">
+            <div class="col-img">
+            <img
+              src="/images/memory-lane.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Memory Lane</h3>
+            <p>Tribute</p>
+          </div>
+          <div class="button">
+            <li><a class="b1">Display</a></li>
+            <li><a class="b2" href="/images/memory-lane.jpg"download>Download</a></li>
+          </div>
+
+          </div>
+          </div>
+      
+    </section>
+
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var b1 = document.getElementsByClassName("b1");
+      var SmallImg = document.getElementsByClassName("small-img")
+
+      b1[0].onclick = function () {
+        MainImg.src = SmallImg[0].src;
+      };
+      b1[1].onclick = function () {
+        MainImg.src = SmallImg[1].src;
+      };
+      b1[2].onclick = function () {
+        MainImg.src = SmallImg[2].src;
+      };
+      b1[3].onclick = function () {
+        MainImg.src = SmallImg[3].src;
+      };
+      b1[4].onclick = function () {
+        MainImg.src = SmallImg[4].src;
+      };
+    </script>
+
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Otitojui A.J</h1>
+
+      <h2>Contact</h2>
+
+      <address>
+        45 Kings Lane, Vescon One Estate, Bamburi, Mombasa<br />
+        <a class="footer__btn" href="mailto:dayotitoju@gmail.com">Email Me</a>
+      </address>
+      <div class="icon">
+        <a href="https://www.facebook.com/otitoju.adedayo"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Dayizo"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dayizo/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC3_-SdXRLmC3t6p9g5ISvqw"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">About Me</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="/pages/about.html#person">Personality</a>
+          </li>
+
+          <li>
+            <a href="#">Academics</a>
+          </li>
+
+          <li>
+            <a href="#">Philosophy</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">My Collection</h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="/pages/tech.html">My Technology</a>
+          </li>
+
+          <li>
+            <a href="/pages/art.html">My Art</a>
+          </li>
+
+          <li>
+            <a href="/pages/blog.html">My Blog</a>
+          </li>
+
+          <li>
+            <a href="#">My Professional Affiliations</a>
+          </li>
+
+          <li>
+            <a href="/pages/my_books.html">My Books</a>
+          </li>
+
+          <li>
+            <a href="/pages/my_wife.html">My Wife</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Disclaimer</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </footer>
+  <script src="/js/deejs.js"></script>
+
+  </body>
+  </html>

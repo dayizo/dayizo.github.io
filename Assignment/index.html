@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Assignment/styles/inter.css" />
+
+    <script src="/Assignment/js/testjs.js"></script>
+  </head>
+  <body onload="displaymsg('LOAD')" onresize="displaymsg('RESIZE')">
+    <h1>Modifying the DOM</h1>
+
+    <button
+      type="button"
+      onclick="document.getElementById('stuff').innerHTML = 'Clicked the first button'"
+    >
+      First
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('stuff').innerHTML = 'Clicked the second button'"
+    >
+      Second
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('stuff').innerHTML = 'Anything is possible... Watch!'"
+    >
+      RESET
+    </button>
+
+    <div>
+      <p class="ex1">
+        This paragraph should
+        <em>NOT</em> anything on the <em>click</em> of the button
+      </p>
+
+      <p id="stuff">Anything is possible... Watch!</p>
+
+      <p class="ex1">
+        This paragraph should
+        <em>NOT</em> do anything on the <em>click</em> of the button
+      </p>
+    </div>
+    <!-- <p id="output"></p>
+
+    <p id="demo"></p> -->
+
+    <h1>Changing the style</h1>
+    <p>JacaScript can change the style of an <em>HTML</em> element</p>
+  </body>
+
+  <button type="button" onclick="openMe()">Open!</button>
+
+  <button type="button" onclick="closeMe()">Close!</button>
+
+  <p id="dem">
+    Extra details... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Expedita necessitatibus harum at illum.
+  </p>
+
+  <script type="text/javascript">
+    function upDate(previewPic) {
+      var src = previewPic.getAttribute("src");
+      var alt = previewPic.getAttribute("alt");
+      document.getElementById("displayinfo").style.backgroundImage =
+        "url('" + src + "')";
+      document.getElementById("displayinfo").innerHTML = alt;
+    }
+
+    function unDo(X) {
+      X = document.getElementById("displayinfo");
+      X.style.backgroundImage = "url('')";
+      X.innerHTML = "Hover over an Image";
+    }
+  </script>
+
+  <div id="displayinfo">Hover over an Image</div>
+
+  <img
+    class="show"
+    src="/images/dayo.jpg"
+    alt="This is Dayo"
+    onmouseover="upDate(this)"
+    onmouseleave="unDo()"
+  />
+
+  <img
+    class="show"
+    src="/images/instagram_logo.png"
+    alt="This is an instagram logo"
+    onmouseover="upDate(this)"
+    onmouseleave="unDo()"
+  />
+
+  <img
+    class="show"
+    src="/images/suit.jpg"
+    alt="This is a suit"
+    onmouseover="upDate(this)"
+    onmouseleave="unDo()"
+  />
+
+  <br />
+  <br />
+  <br />
+
+  <script>
+    var listnum = [34, 66, 987, , 54, 567, , 334];
+    var sum = 0;
+
+    if (listnum.length != 10) {
+      for (i = 0; i < listnum.length; i++) {
+        if (listnum[i] != undefined) {
+          sum = +listnum[i];
+          count = +1;
+        }
+      }
+      document.write(sum / count);
+    } else document.write("Not enough numbers");
+  </script>
+
+  <form action="">
+    <fieldset>
+      <legend>My form</legend>
+      <label for="name">Name</label>
+
+      <input type="text" name="name" id="name" /> <br />
+      <label>Email: <input type="email" name="email" /></label> <br />
+
+      <label for="birth">Birth</label>
+      <input type="date" value="birth" id="birth" /> <br />
+
+      <label>Gender</label> <br />
+      <label><input type="radio" name="male" />Male</label><br />
+      <label><input type="radio" name="female" />Female</label><br />
+
+      <label
+        >Email: <input type="email" name="email" placeholder="me@company.com"
+      /></label>
+      <br />
+
+      <label>CheckBoxes</label><br />
+      <label
+        >Contact me by Email<input
+          type="checkbox"
+          name="check"
+          value="Contact me by Email " /></label
+      ><br />
+      <label
+        >Contact me by number<input
+          type="checkbox"
+          name="check"
+          value="Contact me by number " /></label
+      ><br />
+
+      <label for="number">Favorite number</label>
+      <input type="number" id="number" name="number" /> <br />
+
+      <label for="range">Range</label>
+      <input type="range" id="range" name="range" /> <br />
+
+      <label for="color">Favorite color</label>
+      <input type="color" id="color" name="color" /> <br />
+
+      <label for="website">Website</label>
+      <input type="url" id="website" name="website" /> <br />
+      <input type="submit" value="Click" />
+    </fieldset>
+  </form>
+</html>
