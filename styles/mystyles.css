@@ -456,6 +456,9 @@ a {
   display: inline-block;
 }
 
+/* Tech */
+
+
 /* Gallery */
 
 #gallery {
@@ -471,11 +474,13 @@ a {
 #gallery .single-image {
   width: 100%;
   margin: 50px 0 50px 0;
+  display: flex;
 }
 
 #MainImg {
-  width: 100%;
-  height: 90vh;
+  width: 50%;
+  height: 50vh;
+  margin: 0 auto;
 }
 
 .small-img-group {
@@ -621,6 +626,40 @@ a {
 #prodetails .single-pro-details span {
   line-height: 25px;
 }
+
+#gallery2 {
+  padding-bottom: 100px;
+}
+
+
+#gallery2 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#gallery2 h2 {
+  display: block;
+  margin: 0px auto 50px auto;
+  text-align: center;
+}
+
+#gallery2 div img {
+width: 800px;
+}
+
+#gallery2 div div:nth-child(1) img {
+  height: 1100px;
+  padding-bottom: 100px;
+  }
+
+  #gallery2 div div:nth-child(2) img {
+  height: 1100px;
+  padding-bottom: 100px;
+
+}
+
 
 /* blog */
 
